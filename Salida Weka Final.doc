@@ -1,0 +1,50 @@
+=== Model information ===
+
+Filename:     rf100000.model
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     R_data_frame
+Attributes:   222
+              [list of attributes omitted]
+
+=== Classifier model ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     R_data_frame
+Instances:     unknown (yet). Reading incrementally
+Attributes:   222
+
+=== Summary ===
+
+Correctly Classified Instances      382566               68.5567 %
+Incorrectly Classified Instances    175463               31.4433 %
+Kappa statistic                          0.5304
+Mean absolute error                      0.1934
+Root mean squared error                  0.296 
+Total Number of Instances           558029     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,231    0,001    0,810      0,231    0,360      0,430    0,931     0,417     1
+                 0,657    0,094    0,743      0,657    0,698      0,585    0,887     0,781     2
+                 0,751    0,264    0,676      0,751    0,711      0,481    0,829     0,787     3
+                 0,704    0,108    0,653      0,704    0,678      0,581    0,904     0,747     4
+                 0,304    0,012    0,580      0,304    0,399      0,399    0,894     0,455     5
+Weighted Avg.     0,686    0,164    0,687      0,686    0,681      0,529    0,867     0,756     
+
+=== Confusion Matrix ===
+
+      a      b      c      d      e   <-- classified as
+   1218   3020    826    186     21 |      a = 1
+    268 107460  49423   5995    388 |      b = 2
+     16  29979 177310  27403   1521 |      c = 3
+      2   3540  29162  88063   4236 |      d = 4
+      0    582   5681  13214   8515 |      e = 5
